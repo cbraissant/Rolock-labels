@@ -1,17 +1,25 @@
 <script>
-  import datas from "./data.js";
-  import Label from "./Label.svelte";
+  import rawdatas from "./data.js";
+  import LabelsList from "./LabelsList.svelte";
+  import Sidebar from "./Sidebar.svelte";
+
+  let datas = rawdatas;
+
+  function handleSummary(event) {
+    let value = event.detail.value;
+    let index = event.detail.index;
+    datas[index].product_quantity = value;
+    datas = datas;
+  }
 </script>
 
 <style>
+  .main {
+    display: flex;
+  }
 </style>
 
 <main>
-  <div class="book">
-    {#each datas as data}
-      {#each Array(data.product_quantity) as _, i}
-        <Label {data} />
-      {/each}
-    {/each}
-  </div>
+  <Sidebar on:message={handleSummary} {datas} />
+  <LabelsList {datas} />
 </main>

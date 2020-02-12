@@ -12,51 +12,16 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .page {
   display: flex;
   width: 101mm;
+  height: 53mm;
   padding: 0mm;
   margin: 10mm auto;
   border: 1px eee solid;
   border-radius: 5px;
   background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-}
-.subpage {
-  display: flex;
-  flex-direction: column;
-  margin: 3mm;
-  width: 100%;
-  height: 48mm;
-  justify-content: space-between;
-}
-
-.header {
-  display: flex;
-}
-
-.logo-rolock {
-  height: 18mm;
-}
-
-.qrcode {
-  height: 20mm;
-}
-
-.content {
-  margin-top: 3mm;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.barcode {
-  width: 4cm;
-  max-height: 2cm;
-}
-
-.barcode-number {
-  text-align: center;
 }
 
 @page {

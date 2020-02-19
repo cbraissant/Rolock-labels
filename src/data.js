@@ -20,7 +20,7 @@ let products = [
     product_model: '2-9490XL',
     product_label_1: 'Kit Rolock - Blue PVC drygloves',
     product_label_2: 'Attached lining - Size XL',
-    product_quantity: 0 
+    product_quantity: 0
   },
 
   {
@@ -83,7 +83,7 @@ let products = [
     product_code: 'R0094903',
     product_model: '9490M',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Attached lining - Size M',
     product_quantity: 0
   },
 
@@ -91,7 +91,7 @@ let products = [
     product_code: 'R0094904',
     product_model: '9490L',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Attached lining - Size L',
     product_quantity: 0
   },
 
@@ -99,7 +99,7 @@ let products = [
     product_code: 'R0094905',
     product_model: '9490XL',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Attached lining - Size XL',
     product_quantity: 0
   },
 
@@ -107,7 +107,7 @@ let products = [
     product_code: 'R0094952',
     product_model: '9495S',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size S',
     product_quantity: 0
   },
 
@@ -115,7 +115,7 @@ let products = [
     product_code: 'R0094953',
     product_model: '9495M',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size M',
     product_quantity: 0
   },
 
@@ -123,7 +123,7 @@ let products = [
     product_code: 'R0094954',
     product_model: '9495L',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size L',
     product_quantity: 0
   },
 
@@ -131,7 +131,7 @@ let products = [
     product_code: 'R0094955',
     product_model: '9495XL',
     product_label_1: 'Blue PVC drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size XL',
     product_quantity: 0
   },
 
@@ -139,23 +139,23 @@ let products = [
     product_code: 'R0058093',
     product_model: '5809M',
     product_label_1: 'Black latex drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size M',
     product_quantity: 0
   },
 
   {
-    product_code: 'R0058094',
+    product_code: 'R0058104',
     product_model: '5810L',
     product_label_1: 'Black latex drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size L',
     product_quantity: 0
   },
 
   {
-    product_code: 'R0058095',
+    product_code: 'R0058115',
     product_model: '5811XL',
     product_label_1: 'Black latex drygloves',
-    product_label_2: 'Attached Lining - Size XL',
+    product_label_2: 'Separated lining - Size XL',
     product_quantity: 0
   },
 
@@ -208,7 +208,7 @@ let products = [
   },
 
   {
-    product_code: 'R0081011',
+    product_code: 'R0081010',
     product_model: '8101',
     product_label_1: 'Fleece headband',
     product_label_2: 'Size S – M',
@@ -216,7 +216,7 @@ let products = [
   },
 
   {
-    product_code: 'R0081010',
+    product_code: 'R0081020',
     product_model: '8102',
     product_label_1: 'Fleece headband',
     product_label_2: 'Size L – XL ',
@@ -234,7 +234,7 @@ let products = [
   {
     product_code: 'R0098010',
     product_model: '9801',
-    product_label_1: 'Kit Rolock',
+    product_label_1: 'Kit Rolock 1',
     product_label_2: 'Blue ring ',
     product_quantity: 0
   },
@@ -242,7 +242,7 @@ let products = [
   {
     product_code: 'R0098020',
     product_model: '9802',
-    product_label_1: 'Kit Rolock',
+    product_label_1: 'Kit Rolock 2',
     product_label_2: 'Black ring ',
     product_quantity: 0
   },
@@ -250,7 +250,7 @@ let products = [
   {
     product_code: 'R0098030',
     product_model: '9803',
-    product_label_1: 'Kit Rolock',
+    product_label_1: 'Kit Rolock 3',
     product_label_2: 'Red ring ',
     product_quantity: 0
   },
@@ -386,7 +386,7 @@ let products = [
   {
     product_code: 'R0055020',
     product_model: 'KF 500',
-    product_label_1: 'Transparent blue box',
+    product_label_1: 'Transparent black box',
     product_label_2: '',
     product_quantity: 0
   },
@@ -394,16 +394,16 @@ let products = [
   {
     product_code: 'R0090900',
     product_model: '9090',
-    product_label_1: 'Kit Rolock 90 - Silicone wrist seals',
-    product_label_2: 'No gloves ',
+    product_label_1: 'Kit Rolock 90',
+    product_label_2: 'Silicone wrist seals - No gloves ',
     product_quantity: 0
   },
 
   {
     product_code: 'R0090910',
     product_model: '9091',
-    product_label_1: 'Kit Rolock 90 - No wrist seals',
-    product_label_2: 'No gloves ',
+    product_label_1: 'Kit Rolock 90',
+    product_label_2: 'No wrist seals - No gloves ',
     product_quantity: 0
   },
 
@@ -457,7 +457,7 @@ let products = [
 
   {
     product_code: 'R9094952',
-    product_model: '90-9495 S',
+    product_model: '90-9495S',
     product_label_1: 'Kit Rolock 90 - Blue PVC drygloves',
     product_label_2: 'Separated lining - Size S',
     product_quantity: 0

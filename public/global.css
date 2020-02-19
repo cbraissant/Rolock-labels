@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #cfd8dc;
-  font: 10pt 'Tahoma';
+  font: 10pt 'Roboto';
 }
 * {
   box-sizing: border-box;
@@ -20,17 +20,16 @@ body {
   width: 320px;
   padding: 0 20px;
   background-color: #eceff1;
-  font: 14pt 'Tahoma';
+  font: 14pt 'Roboto';
 }
 
 /* In that file for the print setutp*/
 .page {
   display: flex;
-  width: 101mm;
-  height: 53mm;
+  width: 101.6mm;
+  height: 53.975mm;
   padding: 0mm;
   margin: 6mm;
-  border: 1px eee solid;
   border-radius: 5px;
   background: white;
 }
@@ -77,15 +76,13 @@ select {
 }
 
 @page {
-  size: 101mm 54mm;
-  margin: 0;
+  size: 101.6mm 53.975mm;
+  margin: 0mm;
 }
 
 @media print {
   html,
   body {
-    width: 101mm;
-    height: 54mm;
   }
   .book {
     margin: 0;
@@ -94,7 +91,7 @@ select {
     display: none;
   }
   .page {
-    margin: 0;
+    margin: initial;
     border: initial;
     border-radius: initial;
     width: initial;

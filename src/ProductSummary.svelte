@@ -1,6 +1,10 @@
 <script>
   export let datas;
   import ProductCount from "./ProductCount.svelte";
+  function handlePrint() {
+    window.print();
+    return false;
+  }
 </script>
 
 <style>
@@ -9,10 +13,16 @@
     text-align: center;
     text-transform: uppercase;
   }
+  button {
+    display: block;
+    margin: 10px auto;
+    width: 50%;
+  }
 </style>
 
 <div>
-  <p>Label to be printed</p>
+  <p>Label to print</p>
+  <button on:click={handlePrint}>PRINT</button>
   {#each datas as data, index}
     {#if data.product_quantity > 0}
       <ProductCount on:message {data} {index} />

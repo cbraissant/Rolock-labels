@@ -3,7 +3,7 @@
   import ProductAdd from "./ProductAdd.svelte";
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
-  export let datas;
+  export let rolockArticles;
 </script>
 
 <style>
@@ -17,6 +17,6 @@
   <div class="sidebar-title">
     <h1>Rolock</h1>
   </div>
-  <ProductAdd on:message {datas} />
-  <ProductSummary on:message {datas} />
+  <ProductAdd on:message {rolockArticles} />
+  <ProductSummary on:message {rolockArticles} />
 </div>

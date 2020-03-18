@@ -1,13 +1,15 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  export let rolockArticles;
+
   const dispatch = createEventDispatcher();
-  export let datas;
-  let selected;
-  let quantity = 0;
+
+  let selectedProduct;
+  let productQuantity = 0;
   function setValue() {
     dispatch("message", {
-      value: quantity,
-      index: selected
+      value: productQuantity,
+      index: selectedProduct
     });
   }
 </script>
@@ -20,11 +22,11 @@
 </style>
 
 <div>
-  <select class="product-select" name="item" bind:value={selected}>
-    {#each datas as data, i}
-      <option value={i}>{data.product_model}</option>
+  <select class="product-select" name="item" bind:value={selectedProduct}>
+    {#each rolockArticles as singleArticle, i}
+      <option value={i}>{singleArticle.product_model}</option>
     {/each}
   </select>
-  <input type="number" bind:value={quantity} />
+  <input type="number" bind:value={productQuantity} />
   <button on:click={setValue}>SET</button>
 </div>

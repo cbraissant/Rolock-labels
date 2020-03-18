@@ -3,6 +3,7 @@
   export let product_model;
   export let product_label_1;
   export let product_label_2;
+  export let product_quantity;
   let link =
     `http://barcodes4.me/barcode/c39/` +
     product_code +

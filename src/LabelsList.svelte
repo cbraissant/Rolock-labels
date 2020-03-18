@@ -1,12 +1,12 @@
 <script>
-  export let datas;
+  export let rolockArticles;
   import Label from "./Label.svelte";
 </script>
 
 <div class="book">
-  {#each datas as data}
-      {#each Array(data.product_quantity) as qte, i}
-        <Label {data} />
-      {/each}
+  {#each rolockArticles as singleArticle}
+    {#each Array(singleArticle.product_quantity) as qte, i}
+      <Label {singleArticle} />
+    {/each}
   {/each}
 </div>

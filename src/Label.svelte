@@ -1,5 +1,5 @@
 <script>
-  export let data;
+  export let singleArticle;
   import Header from "./Header.svelte";
   import Barcode from "./Barcode.svelte";
 </script>
@@ -18,6 +18,6 @@
 <div class="page">
   <div class="subpage">
     <Header />
-    <Barcode {...data} />
+    <Barcode {...singleArticle} />
   </div>
 </div>

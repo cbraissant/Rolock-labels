@@ -1,15 +1,15 @@
 <script>
-  import rawdatas from "./data.js";
+  import rolockRawArticles from "./data.js";
   import LabelsList from "./LabelsList.svelte";
   import Sidebar from "./Sidebar.svelte";
 
-  let datas = rawdatas;
+  let rolockArticles = rolockRawArticles;
 
   function handleSummary(event) {
     let value = event.detail.value;
     let index = event.detail.index;
-    datas[index].product_quantity = value;
-    datas = datas;
+    rolockArticles[index].product_quantity = value;
+    rolockArticles = rolockArticles;
   }
 </script>
 
@@ -20,6 +20,6 @@
 </style>
 
 <main>
-  <Sidebar on:message={handleSummary} {datas} />
-  <LabelsList {datas} />
+  <Sidebar on:message={handleSummary} {rolockArticles} />
+  <LabelsList {rolockArticles} />
 </main>

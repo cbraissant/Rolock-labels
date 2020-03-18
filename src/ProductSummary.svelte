@@ -1,5 +1,5 @@
 <script>
-  export let datas;
+  export let rolockArticles;
   import ProductCount from "./ProductCount.svelte";
   function handlePrint() {
     window.print();
@@ -23,9 +23,9 @@
 <div>
   <p>Label to print</p>
   <button on:click={handlePrint}>PRINT</button>
-  {#each datas as data, index}
-    {#if data.product_quantity > 0}
-      <ProductCount on:message {data} {index} />
+  {#each rolockArticles as singleArticle, index}
+    {#if singleArticle.product_quantity > 0}
+      <ProductCount on:message {singleArticle} {index} />
     {/if}
   {/each}
 </div>

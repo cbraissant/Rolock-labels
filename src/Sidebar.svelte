@@ -15,7 +15,7 @@
 
 <div class="sidebar">
   <div class="sidebar-title">
-    <h1>Rolock Labels</h1>
+    <h1>Rolock</h1>
   </div>
   <ProductAdd on:message {datas} />
   <ProductSummary on:message {datas} />

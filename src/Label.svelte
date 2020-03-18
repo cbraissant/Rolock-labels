@@ -11,7 +11,7 @@
     padding: 2mm 5mm;
     width: 100%;
     height: 54mm;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 </style>
 

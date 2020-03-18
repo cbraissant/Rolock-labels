@@ -1,16 +1,17 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  export let rolockArticles;
+  import { labelsToPrint } from "./stores.js";
 
-  const dispatch = createEventDispatcher();
-
-  let selectedProduct;
+  let indexSelectedProduct;
   let productQuantity = 0;
+  let newLabelsToPrint;
+
+  const subscribe = labelsToPrint.subscribe(value => {
+    newLabelsToPrint = value;
+  });
+
   function setValue() {
-    dispatch("message", {
-      value: productQuantity,
-      index: selectedProduct
-    });
+    newLabelsToPrint[indexSelectedProduct].product_quantity = productQuantity;
+    labelsToPrint.set(newLabelsToPrint);
   }
 </script>
 
@@ -22,8 +23,8 @@
 </style>
 
 <div>
-  <select class="product-select" name="item" bind:value={selectedProduct}>
-    {#each rolockArticles as singleArticle, i}
+  <select class="product-select" name="item" bind:value={indexSelectedProduct}>
+    {#each newLabelsToPrint as singleArticle, i}
       <option value={i}>{singleArticle.product_model}</option>
     {/each}
   </select>

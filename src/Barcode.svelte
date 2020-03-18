@@ -1,12 +1,18 @@
 <script>
-  export let product_code;
-  export let product_model;
-  export let product_label_1;
-  export let product_label_2;
-  export let product_quantity;
+  import { labelsToPrint } from "./stores.js";
+  export let index;
+
+  let newLabelsToPrint;
+
+  const subscribe = labelsToPrint.subscribe(value => {
+    newLabelsToPrint = value;
+  });
+
+  let singleArticle = newLabelsToPrint[index];
+
   let link =
     `http://barcodes4.me/barcode/c39/` +
-    product_code +
+    singleArticle.product_code +
     `.png?resolution=4&height=150`;
 </script>
 
@@ -39,13 +45,13 @@
 <div class="product-content">
 
   <div class="product-description">
-    <h2 class="product-model">{product_model}</h2>
-    <p class="product-label">{product_label_1}</p>
-    <p class="product-label">{product_label_2}</p>
+    <h2 class="product-model">{singleArticle.product_model}</h2>
+    <p class="product-label">{singleArticle.product_label_1}</p>
+    <p class="product-label">{singleArticle.product_label_2}</p>
   </div>
 
   <div class="product-barcode">
     <img class="barcode-image" src={link} alt="" />
-    <p class="barcode-number">{product_code}</p>
+    <p class="barcode-number">{singleArticle.product_code}</p>
   </div>
 </div>

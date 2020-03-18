@@ -1,20 +1,23 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-  const dispatch = createEventDispatcher();
-  export let singleArticle;
+  import { labelsToPrint } from "./stores.js";
   export let index;
 
+  let newLabelsToPrint;
+
+  const subscribe = labelsToPrint.subscribe(value => {
+    newLabelsToPrint = value;
+  });
+
+  let articleQuantity = newLabelsToPrint[index].product_quantity;
+
   function setValue() {
-    dispatch("message", {
-      value: singleArticle.product_quantity,
-      index: index
-    });
+    newLabelsToPrint[index].product_quantity = articleQuantity;
+    labelsToPrint.set(newLabelsToPrint);
   }
+
   function resetValue() {
-    dispatch("message", {
-      value: 0,
-      index: index
-    });
+    newLabelsToPrint[index].product_quantity = 0;
+    labelsToPrint.set(newLabelsToPrint);
   }
 </script>
 
@@ -33,8 +36,8 @@
 </style>
 
 <div class="product-count">
-  <div class="product-model">{singleArticle.product_model}</div>
-  <input type="number" min="0" bind:value={singleArticle.product_quantity} />
+  <div class="product-model">{newLabelsToPrint[index].product_model}</div>
+  <input type="number" min="0" bind:value={articleQuantity} />
   <button on:click={setValue}>SET</button>
   <button on:click={resetValue}>X</button>
 </div>

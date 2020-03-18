@@ -4,7 +4,7 @@ let products = [
     product_model: '1-9490M',
     product_label_1: 'Kit Rolock - Blue PVC drygloves',
     product_label_2: 'Attached lining - Size M',
-    product_quantity: 0
+    product_quantity: 3
   },
 
   {
@@ -12,7 +12,7 @@ let products = [
     product_model: '2-9490L',
     product_label_1: 'Kit Rolock - Blue PVC drygloves',
     product_label_2: 'Attached lining - Size L',
-    product_quantity: 0
+    product_quantity: 4
   },
 
   {
@@ -20,7 +20,7 @@ let products = [
     product_model: '2-9490XL',
     product_label_1: 'Kit Rolock - Blue PVC drygloves',
     product_label_2: 'Attached lining - Size XL',
-    product_quantity: 0
+    product_quantity: 2
   },
 
   {

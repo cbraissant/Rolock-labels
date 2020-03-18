@@ -34,7 +34,7 @@
 
 <div class="product-count">
   <div class="product-model">{singleArticle.product_model}</div>
-  <input type="number" bind:value={singleArticle.product_quantity} />
+  <input type="number" min="0" bind:value={singleArticle.product_quantity} />
   <button on:click={setValue}>SET</button>
   <button on:click={resetValue}>X</button>
 </div>

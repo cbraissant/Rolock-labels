@@ -27,6 +27,6 @@
       <option value={i}>{singleArticle.product_model}</option>
     {/each}
   </select>
-  <input type="number" bind:value={productQuantity} />
+  <input type="number" min="0" bind:value={productQuantity} />
   <button on:click={setValue}>SET</button>
 </div>

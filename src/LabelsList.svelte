@@ -11,7 +11,7 @@
 
 <div class="book">
   {#each newLabelsToPrint as singleArticle, index}
-    {#each Array(singleArticle.product_quantity)}
+    {#each Array(singleArticle.product_quantity) as singleLabel}
       <Label {index} />
     {/each}
   {/each}

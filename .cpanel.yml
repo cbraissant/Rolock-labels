@@ -1,5 +1,5 @@
 ---
 deployment:
-    tasks:
-        - export DEPLOYPATH=/home/sftech/dev.sftech.ch/rolock/
-        - /bin/cp -R public $DEPLOYPATH
+  tasks:
+    - export DEPLOYPATH=/home/sftech/dev.sftech.ch/rolock/
+    - /bin/cp -R public $DEPLOYPATH

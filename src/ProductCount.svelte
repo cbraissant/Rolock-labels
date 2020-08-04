@@ -28,15 +28,18 @@
     align-items: center;
   }
   .product-model {
-    min-width: 120px;
-    text-align: center;
+    min-width: 300px;
+    /* text-align: center; */
     vertical-align: middle;
     margin: 4px 4px;
+    overflow: hidden;
   }
 </style>
 
 <div class="product-count">
-  <div class="product-model">{newLabelsToPrint[index].product_model}</div>
+  <div class="product-model">
+    {newLabelsToPrint[index].product_model} - {newLabelsToPrint[index].product_label}
+  </div>
   <input type="number" min="0" bind:value={articleQuantity} />
   <button on:click={setValue}>SET</button>
   <button on:click={resetValue}>X</button>

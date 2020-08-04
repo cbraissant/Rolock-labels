@@ -1,6 +1,6 @@
 <script>
   import { labelsToPrint } from "./stores.js";
-  import rolockArticles from "./data.js";
+  import rolockArticles from "./rolock.js";
   import LabelsList from "./LabelsList.svelte";
   import Sidebar from "./Sidebar.svelte";
 

@@ -30,6 +30,7 @@
 
   .product-label {
     font-size: 8pt;
+    max-width: 150px;
   }
 
   .barcode-image {
@@ -46,8 +47,7 @@
 
   <div class="product-description">
     <h2 class="product-model">{singleArticle.product_model}</h2>
-    <p class="product-label">{singleArticle.product_label_1}</p>
-    <p class="product-label">{singleArticle.product_label_2}</p>
+    <p class="product-label">{singleArticle.product_description}</p>
   </div>
 
   <div class="product-barcode">

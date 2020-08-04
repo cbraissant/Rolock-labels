@@ -25,7 +25,9 @@
 <div>
   <select class="product-select" name="item" bind:value={indexSelectedProduct}>
     {#each newLabelsToPrint as singleArticle, i}
-      <option value={i}>{singleArticle.product_model}</option>
+      <option value={i}>
+        {singleArticle.product_model} - {singleArticle.product_label}
+      </option>
     {/each}
   </select>
   <input type="number" min="0" bind:value={productQuantity} />

@@ -1,13 +1,6 @@
 let products = [
   {
     product_code: 'R0194903',
-    product_model: 'SIMPLE TEST',
-    product_label: 'Kit gants attenants M ',
-    product_description: 'Kit Rolock 9801 with gloves 9490 M',
-    product_quantity: 0,
-  },
-  {
-    product_code: 'R0194903',
     product_model: '1-9490M',
     product_label: 'Kit gants attenants M ',
     product_description: 'Kit Rolock 9801 with gloves 9490 M',

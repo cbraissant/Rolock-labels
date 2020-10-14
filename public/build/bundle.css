@@ -1,9 +1,10 @@
+main.svelte-1ouhhif{display:flex;height:100%;width:100%}
 .product-content.svelte-kflemt{display:flex;justify-content:space-between;width:100%;font-size:8pt}.product-model.svelte-kflemt{margin-bottom:1mm}.product-label.svelte-kflemt{font-size:8pt;max-width:150px}.barcode-image.svelte-kflemt{width:4.5cm;max-height:2cm}.barcode-number.svelte-kflemt{text-align:center;margin-top:-1mm}
-.header.svelte-ni9x9u{display:flex;justify-content:space-between}.logo-rolock.svelte-ni9x9u{height:17mm}.qrcode.svelte-ni9x9u{height:20mm}.header-text.svelte-ni9x9u{max-width:7cm}
+.header.svelte-vwewc1{display:flex;justify-content:space-between}.logo-rolock.svelte-vwewc1{height:17mm}.qrcode.svelte-vwewc1{height:20mm}.header-text.svelte-vwewc1{text-align:center;max-width:6.9cm;font-size:13px}
 .subpage.svelte-grvi14{display:flex;flex-direction:column;padding:2mm 5mm;width:100%;height:54mm;justify-content:space-around}
 div.svelte-1hveezd{padding:10px 0;display:flex}
 .product-count.svelte-bns9m0{padding:10px 0;display:flex;align-items:center}.product-model.svelte-bns9m0{min-width:300px;vertical-align:middle;margin:4px 4px;overflow:hidden}
 p.svelte-180thma{margin-top:40px;text-align:center;text-transform:uppercase}button.svelte-180thma{display:block;margin:10px auto;width:50%}
-.sidebar-title.svelte-h0oabg{text-align:center;padding:30px 0px}
+h1.svelte-1iifkk4{text-align:center;padding:30px 0px}aside.svelte-1iifkk4{height:100%;width:500px;padding:0 20px;background-color:#eceff1}
 
 /*# sourceMappingURL=bundle.css.map */

@@ -1,26 +1,21 @@
-body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #cfd8dc;
-    font: 10pt 'Roboto';
-}
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 500px;
-    padding: 0 20px;
-    background-color: #eceff1;
-    font: 12pt 'Roboto';
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cfd8dc;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 /* In that file for the print setutp*/
@@ -36,7 +31,6 @@ body {
 .book {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 500px;
 }
 
 input {
@@ -83,9 +77,6 @@ select {
 @media print {
     html,
     body {
-    }
-    .book {
-        margin: 0;
     }
     .sidebar {
         display: none;

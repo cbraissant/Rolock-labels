@@ -13,7 +13,9 @@
   }
 
   .header-text {
-    max-width: 7cm;
+    text-align: center;
+    max-width: 6.9cm;
+    font-size: 13px;
   }
 </style>
 
